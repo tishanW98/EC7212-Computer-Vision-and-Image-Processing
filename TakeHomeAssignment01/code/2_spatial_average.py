@@ -10,7 +10,7 @@ def spatial_average(image_path, window_sizes):
     results = {}
     for size in window_sizes:
         averaged = uniform_filter(img_np, size=size)
-        output_name = f'../output/spatial_average/spatial_avg_{size}x{size}.png'
+        output_name = f'../output/2_spatial_average/spatial_avg_{size}x{size}.png'
         Image.fromarray(averaged.astype(np.uint8)).save(output_name)
         results[size] = averaged
 

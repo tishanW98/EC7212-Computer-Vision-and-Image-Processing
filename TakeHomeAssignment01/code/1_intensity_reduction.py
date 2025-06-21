@@ -8,7 +8,7 @@ def reduce_intensity(image_path, levels):
     step = 256 // levels
     reduced = (img_np // step) * step
     Image.fromarray(reduced.astype(np.uint8)).save(
-        f'../output/intensity/intensity_{levels}.png')
+        f'../output/1_intensity_reduction/intensity_{levels}.png')
     return reduced
 
 

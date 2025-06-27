@@ -1,7 +1,6 @@
 from PIL import Image
 import numpy as np
 
-
 def block_average(image_path, block_sizes):
     image = Image.open(image_path).convert('L')
     img_np = np.array(image)
@@ -25,6 +24,4 @@ def block_average(image_path, block_sizes):
 
     return results
 
-
-# Example usage:
 block_avg_results = block_average('../input/girl.jpg', [3, 5, 7])

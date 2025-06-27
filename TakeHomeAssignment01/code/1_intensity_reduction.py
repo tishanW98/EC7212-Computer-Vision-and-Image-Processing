@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 
 def reduce_intensity(image_path, levels):
-    image = Image.open(image_path).convert('L')  # Grayscale
+    image = Image.open(image_path).convert('L')
     img_np = np.array(image)
 
     step = 256 // levels

@@ -40,4 +40,4 @@ def task2(image_path):
     Image.fromarray(region).save("../output/region_growing_result.png")
 
 
-task2("../input/synthetic_image.png")
+task2("../input/input_image.png")
